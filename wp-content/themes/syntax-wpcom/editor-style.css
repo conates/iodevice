@@ -1,0 +1,872 @@
+/* Theme Name: Syntax
+ * Description: Used to style the TinyMCE editor. */
+/* =Reset
+-------------------------------------------------------------- */
+/* line 11, sass/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, th {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 22, sass/partials/_reset.scss */
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+/* line 30, sass/partials/_reset.scss */
+*,
+*:before,
+*:after {
+  /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
+  /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+  -moz-box-sizing: border-box;
+  /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+  box-sizing: border-box;
+}
+
+/* line 35, sass/partials/_reset.scss */
+body {
+  background: #fff;
+}
+
+/* line 47, sass/partials/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* line 50, sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 53, sass/partials/_reset.scss */
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 57, sass/partials/_reset.scss */
+caption, th, td, th {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 62, sass/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 65, sass/partials/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 68, sass/partials/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 72, sass/partials/_reset.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 75, sass/partials/_reset.scss */
+a img {
+  border: 0;
+}
+
+/* =Rebuild
+----------------------------------------------- */
+/* line 61, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 13, sass/partials/_rebuild.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: Georgia, "Bitstream Charter", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Headings */
+/* line 21, sass/partials/_rebuild.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 24, sass/partials/_rebuild.scss */
+hr {
+  border: 1px solid #ccc;
+  border-width: 0 0 1px 0;
+  height: 0;
+  margin-top: -1px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+}
+
+/* Text elements */
+/* line 34, sass/partials/_rebuild.scss */
+p {
+  margin-bottom: 24px;
+}
+
+/* line 37, sass/partials/_rebuild.scss */
+ul, ol {
+  margin: 0 0 24px 36px;
+}
+
+/* line 40, sass/partials/_rebuild.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 43, sass/partials/_rebuild.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 47, sass/partials/_rebuild.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 24px;
+}
+
+/* line 51, sass/partials/_rebuild.scss */
+dt {
+  font-weight: 600;
+}
+
+/* line 54, sass/partials/_rebuild.scss */
+dd {
+  margin: 0 24px 24px;
+}
+
+/* line 57, sass/partials/_rebuild.scss */
+b, strong {
+  font-weight: 600;
+}
+
+/* line 60, sass/partials/_rebuild.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 63, sass/partials/_rebuild.scss */
+blockquote {
+  margin: 0 24px;
+}
+
+/* line 66, sass/partials/_rebuild.scss */
+address {
+  margin: 0 0 24px;
+}
+
+/* line 69, sass/partials/_rebuild.scss */
+pre {
+  background: rgba(119, 119, 119, 0.5);
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  margin-top: -2px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  overflow: auto;
+  padding: 24px;
+}
+
+/* line 79, sass/partials/_rebuild.scss */
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+}
+
+/* line 83, sass/partials/_rebuild.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 87, sass/partials/_rebuild.scss */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 92, sass/partials/_rebuild.scss */
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 99, sass/partials/_rebuild.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 102, sass/partials/_rebuild.scss */
+sub {
+  top: .5ex;
+}
+
+/* line 105, sass/partials/_rebuild.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 108, sass/partials/_rebuild.scss */
+big {
+  font-size: 125%;
+}
+
+/* line 111, sass/partials/_rebuild.scss */
+figure {
+  margin: 0;
+}
+
+/* line 114, sass/partials/_rebuild.scss */
+table {
+  margin: 0 0 24px;
+  width: 100%;
+}
+
+/* line 118, sass/partials/_rebuild.scss */
+th {
+  font-weight: bold;
+}
+
+/* line 121, sass/partials/_rebuild.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* Alignment */
+/* line 127, sass/partials/_rebuild.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 24px;
+}
+
+/* line 132, sass/partials/_rebuild.scss */
+.alignright, blockquote.alignright {
+  display: inline;
+  float: right;
+  margin-left: 24px;
+}
+
+/* line 137, sass/partials/_rebuild.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Text meant only for screen readers */
+/* line 3, sass/modules/_a11y.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+/* line 9, sass/modules/_a11y.scss */
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #fff;
+  border: 1px solid #000;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 10px;
+  box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 10px;
+  clip: auto !important;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 24px;
+  z-index: 100000;
+  position: absolute !important;
+  top: 24px;
+  left: 24px;
+}
+
+/* Clearing */
+/* line 4, sass/modules/_layout.scss */
+.clear:before,
+.clear:after {
+  content: '';
+  display: table;
+}
+
+/* line 9, sass/modules/_layout.scss */
+.clear:after {
+  clear: both;
+}
+
+/* line 4, sass/modules/_layout.scss */
+.entry-content:before,
+.entry-content:after {
+  content: '';
+  display: table;
+}
+
+/* line 9, sass/modules/_layout.scss */
+.entry-content:after {
+  clear: both;
+}
+
+/* line 4, sass/modules/_layout.scss */
+.comment-content:before,
+.comment-content:after {
+  content: '';
+  display: table;
+}
+
+/* line 9, sass/modules/_layout.scss */
+.comment-content:after {
+  clear: both;
+}
+
+/* line 4, sass/modules/_layout.scss */
+.site-header:before,
+.site-header:after {
+  content: '';
+  display: table;
+}
+
+/* line 9, sass/modules/_layout.scss */
+.site-header:after {
+  clear: both;
+}
+
+/* line 4, sass/modules/_layout.scss */
+.site-content:before,
+.site-content:after {
+  content: '';
+  display: table;
+}
+
+/* line 9, sass/modules/_layout.scss */
+.site-content:after {
+  clear: both;
+}
+
+/* line 4, sass/modules/_layout.scss */
+.site-footer:before,
+.site-footer:after {
+  content: '';
+  display: table;
+}
+
+/* line 9, sass/modules/_layout.scss */
+.site-footer:after {
+  clear: both;
+}
+
+/* line 61, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 112.5%;
+}
+
+/* line 64, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 18px;
+  line-height: 1.65em;
+}
+
+/* line 17, sass/editor-style.sass */
+html .mceContentBody {
+  max-width: 757px;
+}
+
+/* line 20, sass/editor-style.sass */
+body.mceContentBody {
+  background: white;
+  color: #444444;
+  font-family: Merriweather, Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29.7px;
+  margin: 29.7px;
+}
+
+/* Headings */
+/* line 34, sass/editor-style.sass */
+h1 {
+  line-height: 0.63191em;
+  font-size: 47px;
+  margin: 29.7px 0;
+}
+
+/* line 34, sass/editor-style.sass */
+h2 {
+  line-height: 1.02414em;
+  font-size: 29px;
+  margin: 29.7px 0;
+}
+
+/* line 34, sass/editor-style.sass */
+h3 {
+  line-height: 1.2913em;
+  font-size: 23px;
+  margin: 29.7px 0;
+}
+
+/* line 34, sass/editor-style.sass */
+h4 {
+  line-height: 1.65em;
+  font-size: 18px;
+  margin: 29.7px 0;
+}
+
+/* line 34, sass/editor-style.sass */
+h5 {
+  line-height: 1.65em;
+  font-size: 18px;
+  margin: 29.7px 0;
+}
+
+/* line 34, sass/editor-style.sass */
+h6 {
+  line-height: 2.12143em;
+  font-size: 14px;
+  margin: 29.7px 0;
+}
+
+/* line 42, sass/editor-style.sass */
+h5 {
+  font-style: italic;
+}
+
+/* line 44, sass/editor-style.sass */
+h6 {
+  text-transform: uppercase;
+}
+
+/* line 46, sass/editor-style.sass */
+hr {
+  background-color: #777777;
+  border: 0;
+  height: 1px;
+  margin-bottom: 28.7px;
+  padding: 0;
+}
+
+/* Text elements */
+/* line 54, sass/editor-style.sass */
+p {
+  margin-bottom: 29.7px;
+}
+
+/* line 56, sass/editor-style.sass */
+ul {
+  margin: 0 0 29.7px 29.7px;
+  list-style: disc;
+}
+/* line 59, sass/editor-style.sass */
+ul ul {
+  list-style: square;
+}
+/* line 61, sass/editor-style.sass */
+ul ul ul {
+  list-style: circle;
+}
+
+/* line 63, sass/editor-style.sass */
+ol {
+  margin: 0 0 29.7px 29.7px;
+  list-style: decimal;
+}
+/* line 66, sass/editor-style.sass */
+ol ol {
+  list-style: lower-alpha;
+}
+/* line 68, sass/editor-style.sass */
+ol ol ol {
+  list-style: lower-roman;
+}
+
+/* line 70, sass/editor-style.sass */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 29.7px;
+}
+
+/* line 74, sass/editor-style.sass */
+dt {
+  font-weight: 400;
+}
+
+/* line 76, sass/editor-style.sass */
+dd {
+  margin: 14.85px 0 14.85px 29.7px;
+}
+
+/* line 78, sass/editor-style.sass */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 80, sass/editor-style.sass */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 82, sass/editor-style.sass */
+blockquote {
+  border-left: 1px solid #777777;
+  font-style: italic;
+  margin-bottom: 29.7px;
+  padding: 0 0 0 29.7px;
+}
+/* line 87, sass/editor-style.sass */
+blockquote blockquote {
+  padding-right: 0;
+}
+/* line 89, sass/editor-style.sass */
+blockquote.alignleft, blockquote.alignright, blockquote.aligncenter {
+  border-left: 0;
+  border-top: 5px solid #777777;
+  border-bottom: 5px solid #777777;
+  color: #666666;
+  font-size: 1.27778em;
+  line-height: 1.2913em;
+  line-height: 1.61413em;
+  margin-left: -125.49999px;
+  padding: 24.7px 29.7px;
+  width: 33.333%;
+}
+@media screen and (max-width: 1020px) {
+  /* line 89, sass/editor-style.sass */
+  blockquote.alignleft, blockquote.alignright, blockquote.aligncenter {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 89, sass/editor-style.sass */
+  blockquote.alignleft, blockquote.alignright, blockquote.aligncenter {
+    clear: both;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+/* line 110, sass/editor-style.sass */
+blockquote.alignleft p, blockquote.alignright p, blockquote.aligncenter p {
+  margin-bottom: 0;
+}
+/* line 112, sass/editor-style.sass */
+blockquote.alignright {
+  margin-left: 29.7px;
+  margin-right: -125.49999px;
+}
+@media screen and (max-width: 1020px) {
+  /* line 112, sass/editor-style.sass */
+  blockquote.alignright {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 112, sass/editor-style.sass */
+  blockquote.alignright {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+/* line 124, sass/editor-style.sass */
+blockquote.aligncenter {
+  margin: 0 auto 29.7px;
+  width: 90%;
+}
+/* line 128, sass/editor-style.sass */
+blockquote cite {
+  border: 0;
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+/* line 133, sass/editor-style.sass */
+blockquote cite:before {
+  content: "~";
+  margin-right: 7.425px;
+}
+
+/* line 137, sass/editor-style.sass */
+address {
+  font-style: italic;
+  margin-bottom: 29.7px;
+}
+
+/* line 140, sass/editor-style.sass */
+pre {
+  background: rgba(0, 0, 0, 0.03);
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 0.94444em;
+  line-height: 1.74706em;
+  margin-bottom: 29.7px;
+  padding: 29.7px;
+  overflow: auto;
+  max-width: 100%;
+}
+
+/* line 148, sass/editor-style.sass */
+code, kbd, tt, var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 0.94444em;
+  line-height: 1.74706em;
+}
+
+/* line 151, sass/editor-style.sass */
+abbr, acronym {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+  margin-bottom: 28.7px;
+}
+
+/* line 155, sass/editor-style.sass */
+mark,
+ins {
+  background: fff9c0;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 160, sass/editor-style.sass */
+sup,
+sub {
+  font-size: 0.75em;
+  line-height: 2.2em;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, sass/editor-style.sass */
+sup {
+  bottom: 1ex;
+}
+
+/* line 169, sass/editor-style.sass */
+sub {
+  top: 0.5ex;
+}
+
+/* line 171, sass/editor-style.sass */
+small {
+  font-size: 0.75em;
+  line-height: 2.2em;
+}
+
+/* line 173, sass/editor-style.sass */
+big {
+  font-size: 1.25em;
+  line-height: 1.32em;
+}
+
+/* line 175, sass/editor-style.sass */
+figure {
+  margin: 0;
+}
+
+/* line 177, sass/editor-style.sass */
+table {
+  margin-bottom: 29.7px;
+  width: 100%;
+}
+
+/* line 180, sass/editor-style.sass */
+td, th {
+  border-bottom: 1px solid #eeeeee;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-collapse: collapse;
+  color: inherit;
+  font-size: 18px;
+  margin: 0;
+  padding: 7.425px 3px 6.425px;
+}
+
+/* line 190, sass/editor-style.sass */
+th {
+  font-weight: 400;
+}
+
+/* line 193, sass/editor-style.sass */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Links */
+/* line 199, sass/editor-style.sass */
+a {
+  color: #444444;
+}
+/* line 201, sass/editor-style.sass */
+a:visited {
+  color: #444444;
+}
+/* line 203, sass/editor-style.sass */
+a:hover, a:focus, a:active {
+  color: #666666;
+}
+
+/* =Media */
+/* line 209, sass/editor-style.sass */
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 215, sass/editor-style.sass */
+.wp-caption {
+  background: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  border-bottom: 5px solid #777777;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 24.7px;
+  max-width: 100%;
+  padding: 0;
+}
+/* line 228, sass/editor-style.sass */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* line 232, sass/editor-style.sass */
+.wp-caption dd {
+  color: #666666;
+  font-size: 0.88889em;
+  line-height: 1.85625em;
+  font-style: italic;
+  margin: 14.85px 0;
+  padding: 0 1%;
+  text-align: left;
+}
+
+/* line 239, sass/editor-style.sass */
+.size-thumbnail + .wp-caption dd,
+.size-medium + .wp-caption dd {
+  font-size: 0.77778em;
+  line-height: 2.12143em;
+  line-height: 2.12143em;
+}
+
+/* Alignment */
+/* line 245, sass/editor-style.sass */
+.alignleft {
+  display: inline;
+  float: left;
+  margin: 14.85px 29.7px 14.85px 0;
+}
+
+/* line 249, sass/editor-style.sass */
+img.alignleft,
+.wp-caption.alignleft {
+  margin-left: -125.49999px;
+}
+@media screen and (max-width: 1020px) {
+  /* line 249, sass/editor-style.sass */
+  img.alignleft,
+  .wp-caption.alignleft {
+    margin-left: 0;
+  }
+}
+
+/* line 254, sass/editor-style.sass */
+.alignright, blockquote.alignright {
+  display: inline;
+  float: right;
+  margin: 14.85px 0 14.85px 29.7px;
+}
+
+/* line 258, sass/editor-style.sass */
+img.alignright,
+.wp-caption.alignright {
+  margin-right: -125.49999px;
+}
+@media screen and (max-width: 1020px) {
+  /* line 258, sass/editor-style.sass */
+  img.alignright,
+  .wp-caption.alignright {
+    margin-right: 0;
+  }
+}
+
+/* line 263, sass/editor-style.sass */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 29.7px auto;
+}
