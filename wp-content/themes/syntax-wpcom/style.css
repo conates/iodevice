@@ -2160,7 +2160,12 @@ div.sharedaddy div.sd-block {
     text-align: center;
     vertical-align: top;
     width: 350px !important;
+	height:100px;
 }
 #boton_enviar input{
 	height: 50px;
+}
+.lista > span {
+    color: #777777;
+    font-size: 13px;
 }

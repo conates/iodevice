@@ -17,6 +17,7 @@ $path     = get_theme_mod( 'jetpack-path' );
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -24,6 +25,7 @@ $path     = get_theme_mod( 'jetpack-path' );
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php wp_head(); ?>
+<script  src='http://iodevice/wp-content/themes/syntax-wpcom/script.js?ver=3.4.2'> </script>
 </head>
 
 <body <?php body_class(); ?>>
